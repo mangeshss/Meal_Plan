@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Planner</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container1">
+        <a class="navbar-brand">
+          <img
+            class="image"
+            src="https://png.pngtree.com/png-clipart/20220911/original/pngtree-chef-hat-and-cooking-logo-png-image_8538758.png"
+            width="50"
+            height="30"
+          />
+          <h3>
+            <span class="Heading">MEAL PLANNER</span>
+          </h3>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="formclass">
+        <div class="basic">
+          <div class="heightclass">
+            <div class="height">
+              <input
+                type="number"
+                class="form-control"
+                id="height"
+                placeholder="Enter Height (in cm)"
+              />
+            </div>
+          </div>
+          <div class="weightclass">
+            <div class="weightdiv">
+              <input
+                type="number"
+                class="form-control"
+                id="weight"
+                placeholder="Enter Weight (in kg)"
+              />
+            </div>
+          </div>
+          <div class="ageclass">
+            <div class="age">
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Enter Age"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="options">
+          <div class="genderclass">
+            <select class="form-select" id="gender">
+              <option selected value="gender" disabled>Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="activityclass">
+            <select class="form-select" id="activity">
+              <option selected value="activity" disabled>Activity</option>
+              <option value="light">Light</option>
+              <option value="moderate">Moderate</option>
+              <option value="active">Active</option>
+            </select>
+          </div>
+        </div>
+        <div class="btndiv">
+          <button type="submit" class="btn" id="submit">Generate Meals</button>
+        </div>
+      </div>
+      <div class="meals">
+        <div id="loader" style="display: none"></div>
+        <div class="text-center" id="details"></div>
+        <div class="row1" id="cards-container"></div>
+
+        <div class="meal-recipe">
+          <h1 id="recipe-section" class="text-center"></h1>
+          <div class="row2">
+            <div class="recipes" id="ingredients"></div>
+            <div class="recipes" id="steps"></div>
+            <div class="recipes" id="equipment"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
